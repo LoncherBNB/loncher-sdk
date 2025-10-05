@@ -5,13 +5,13 @@ A simple JavaScript/TypeScript SDK for interacting with the Loncher token launch
 ## Installation
 
 ```bash
-npm install @loncherbnb/sdk ethers@6
+npm install loncher-sdk ethers@6
 ```
 
 ## Quick Start
 
 ```typescript
-import { LoncherSDK } from '@loncherbnb/sdk';
+import { LoncherSDK } from 'loncher-sdk';
 import { parseEther, Wallet, JsonRpcProvider } from 'ethers';
 
 // Create a signer
@@ -178,7 +178,7 @@ const provider = new JsonRpcProvider('https://bsc-dataseed.binance.org');
 const signer = new Wallet('0x...your_private_key', provider);
 
 const sdk = new LoncherSDK({
-  factoryAddress: '0x236a6B18E30C6073849653cc0f1c46985FD06A8c',
+  factoryAddress: '0x236a6B18E30C6073849653cc0f1c46985FD06A8c',no, 
   indexerAddress: '0xb7AB1e21E3A44243361DBa42d8d72213535C083C',
   signer, // Pass ethers Signer instance
 });
@@ -255,7 +255,7 @@ import {
   FEE_TIER_10000,
   BSC_CHAIN_ID,
   BSC_TESTNET_CHAIN_ID,
-} from '@loncherbnb/sdk';
+} from 'loncher-sdk';
 ```
 
 ## TypeScript Support
@@ -272,7 +272,7 @@ import {
   TradeEvent,
   TokenCreatedEvent,
   TokenPair,
-} from '@loncherbnb/sdk';
+} from 'loncher-sdk';
 ```
 
 ## Examples

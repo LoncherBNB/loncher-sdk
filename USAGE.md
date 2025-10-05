@@ -121,12 +121,12 @@ Use the SDK in your Nuxt/Vue frontend:
 
 ```bash
 # In your frontend project
-npm install @loncherbnb/sdk ethers@6
+npm install loncher-sdk ethers@6
 ```
 
 ```javascript
 // In your Vue component or composable
-import { LoncherSDK } from '@loncherbnb/sdk';
+import { LoncherSDK } from 'loncher-sdk';
 import { BrowserProvider } from 'ethers';
 
 // Use with MetaMask/wallet
@@ -153,7 +153,7 @@ const result = await sdk.factory.deployToken({
 The SDK includes full TypeScript definitions:
 
 ```typescript
-import { LoncherSDK, TokenInfo, DeployTokenResult } from '@loncherbnb/sdk';
+import { LoncherSDK, TokenInfo, DeployTokenResult } from 'loncher-sdk';
 
 const sdk = new LoncherSDK({ ... });
 
@@ -189,5 +189,5 @@ import {
   PANCAKE_V3_FACTORY,
   FEE_TIER_10000,
   BSC_CHAIN_ID,
-} from '@loncherbnb/sdk';
+} from 'loncher-sdk';
 ```
