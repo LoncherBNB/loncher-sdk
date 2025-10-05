@@ -1,0 +1,48 @@
+{
+  "name": "loncher-sdk",
+  "version": "1.0.0",
+  "description": "JavaScript SDK for interacting with the Loncher token launchpad platform",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LoncherBNB/loncher-sdk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/LoncherBNB/loncher-sdk/issues"
+  },
+  "homepage": "https://github.com/LoncherBNB/loncher-sdk#readme",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "loncher",
+    "defi",
+    "token",
+    "launchpad",
+    "bsc",
+    "binance-smart-chain",
+    "ethereum",
+    "web3",
+    "ethers",
+    "pancakeswap"
+  ],
+  "author": "Loncher Team",
+  "license": "MIT",
+  "peerDependencies": {
+    "ethers": "^6.0.0"
+  },
+  "devDependencies": {
+    "ethers": "^6.13.4",
+    "typescript": "^5.7.3"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "USAGE.md",
+    "LICENSE"
+  ]
+}
